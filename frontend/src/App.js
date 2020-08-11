@@ -13,10 +13,12 @@ function App() {
     updateBatState(!batDown);
   }
   const batClass = batDown ? "bat" : "bat-down";
-  const scale = Math.min(((window.innerWidth) / 600) , 1);
+  const scale = Math.min(((window.outerWidth) / 600) , 1);
   const style = {
     transform: `scale(${scale})`
   }
+  console.log(scale);
+  console.log(window.outerWidth);
   return (
     <div style={style}>
       <div className="frame" onClick={() => bonk()}>
