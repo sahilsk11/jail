@@ -13,12 +13,18 @@ function App() {
     updateBatState(!batDown);
   }
   const batClass = batDown ? "bat" : "bat-down";
+  const scale = Math.min(((window.innerWidth) / 600) , 1);
+  const style = {
+    transform: `scale(${scale})`
+  }
   return (
-    <div className="frame" onClick={() => bonk()}>
-      <Message batDown={batDown}/>
-      <img className={batClass} src="./bat1.png" />
-      <img src="./doggo.png" className="doggo" />
-      <img src="./bonker.png" className="bonker" />
+    <div style={style}>
+      <div className="frame" onClick={() => bonk()}>
+        <Message batDown={batDown} />
+        <img className={batClass} src="./bat1.png" />
+        <img src="./doggo.png" className="doggo" />
+        <img src="./bonker.png" className="bonker" />
+      </div>
     </div>
   );
 }
