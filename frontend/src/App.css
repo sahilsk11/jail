@@ -1,0 +1,58 @@
+body {
+  cursor: url("./baseball-bat.png"), auto;
+  width: 100%;
+  height: 100vh;
+  cursor: default;
+}
+
+.frame {
+  cursor: url("./baseball-bat.png"), auto;
+  width: 600px;
+  height: 500px;
+  position: relative;
+  margin: 0px auto;
+  margin-top: 100px;
+}
+
+.doggo {
+  outline: none;
+  width: 300px;
+  position: absolute;
+  top: 100px
+}
+.bonker {
+    outline: none;
+
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+}
+
+.bat {
+    outline: none;
+
+  position: absolute;
+  transform: scaleX(-1) rotate(90deg);
+  width: 300px;
+  z-index: 1;
+  top: 120px;
+}
+
+.bat-down {
+    outline: none;
+
+  position: absolute;
+  transform: scaleX(-1) rotate(0deg);
+  width: 300px;
+  z-index: 1;
+  top: 190px;
+  left: 220px;
+}
+
+.message {
+  position: absolute;
+  left: 400px;
+  top: 100px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
